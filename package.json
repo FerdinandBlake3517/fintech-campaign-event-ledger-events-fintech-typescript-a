@@ -1,0 +1,21 @@
+{
+  "name": "fintech-campaign-event-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/payment_notification_server.ts",
+    "start": "tsx src/payment_notification_server.ts",
+    "demo": "tsx scripts/run_campaign.ts",
+    "test": "tsx --test test/risk_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
